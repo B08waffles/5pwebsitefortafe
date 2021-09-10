@@ -1,0 +1,209 @@
+html {
+    background-color: rgb(204, 151, 253);
+}
+
+header {
+    font-size: 5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    border-color: black;
+    border: 7px;
+    border-style:solid;
+    background-color: rgb(146, 101, 219);
+    padding:50px;
+    margin: 10px;
+    background-image:url("../IMG/abcoptical.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position:right ;
+    filter: grayscale(30%),drop-shadow(5px 5px 15px green);
+}
+header:hover {color: rgb(47, 35, 255);filter:invert(1);}
+nav {
+    display: flex;
+    border-color: black;
+    border: 7px;
+    border-style:solid;
+    background-color: rgb(154, 119, 211);
+    padding:50px;
+    margin: 10px;
+}
+footer {
+    display: flex;
+    border-color: black;
+    border: 7px;
+    border-style:solid;
+    background-color: rgb(180, 146, 235);
+    padding:2em;
+    margin: 10px;
+    width: 90%;
+    font-size: larger;
+}
+h1 {
+    padding: 0.4em;
+    font-size: 2.5em;
+}  
+p {
+    padding:0.4em;
+    font-size: 1.5em;
+}
+figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    font-size:x-large;
+}
+figure {
+    float:left;
+    display: table;
+    width: 30%;
+    text-align:center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+   
+
+}
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+    background: rgb(47, 35, 255);
+}
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems { display: flex; }
+#hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;}
+#hamitems a:visited {color: aqua;}    
+  
+#hamitems a:hover { background: #401408;} 
+
+
+/* (C) HIDE HAMBURGER */
+#hamnav label, #hamburger { display: none; }
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 90%;
+      border-top: 1px solid #333;
+    }
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #a02620;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+    #figureb {
+        display: none 
+    }
+    #figurec {
+        display: none
+    }
+    input {
+        display: none
+    }
+    #t1 {
+        display: none
+    }
+    #t2 {
+        display: none
+    }
+    #t3 {
+        display: none
+    }
+    #t4 {
+        display: none
+    }
+    #t5 {
+        display: none
+    }
+    #t6 {
+        display: none
+    }
+    #t7 {
+        display: none
+    }
+    figure img {
+        float:left;
+        margin-right: 26em;
+        border:none
+        
+    }
+  }
+footer > a {
+    padding: 0.4em;
+    color: black;
+    font-size: 1.1em;
+    
+}
+
+form {
+    text-align: center;
+    font-size: 1.4em;
+}
+#msage {
+    height: 12em;
+    width:28em;
+}
+#email {
+    width: 28em;
+}
+#name {
+    width: 28em
+}
+#email2 {
+    width: 28em
+}
+#name2 {
+    width: 28em
+}
+#msage2 {
+    width:28em;
+    height:12em
+}
+#blogpage {
+    float: right;
+}
+
+section {
+    display:inline-flex    
+}
+table {
+    text-align: center;
+    
+}
+#piss {
+    word-wrap:break-word;
+    
+}
+tr {
+    font-size: x-large;
+}
+#ContactNumber {
+    width: 28em
+}
+#Date {
+    width: 28em
+}
+    
+
+footer:hover {color: #401408;}
+footer a:hover {color:rgb(47, 35, 255)}
