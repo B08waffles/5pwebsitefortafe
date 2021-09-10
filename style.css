@@ -12,7 +12,7 @@ header {
     background-color: rgb(146, 101, 219);
     padding:50px;
     margin: 10px;
-    background-image:url("/abcoptical.png");
+    background-image:url("./abcoptical.png");
     background-size: 20%;
     background-repeat: no-repeat;
     background-position:right ;
